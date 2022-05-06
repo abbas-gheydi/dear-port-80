@@ -33,7 +33,7 @@ func main() {
 
 		inputConnection, err := listener.Accept()
 		if err != nil {
-			log.Println("error accepting connection", err)
+			log.Println("error Accepting Connection", err)
 			continue
 		}
 
@@ -62,10 +62,10 @@ func main() {
 
 			if isSSH {
 				remoteService = *ssh
-				log.Println(inputConnection.RemoteAddr(), "Connected as SSH conenction")
+				log.Println(inputConnection.RemoteAddr(), "Connected as SSH Connection")
 			} else {
 				remoteService = *http
-				log.Println(inputConnection.RemoteAddr(), "Connected as HTTP conenction")
+				log.Println(inputConnection.RemoteAddr(), "Connected as HTTP Connection")
 			}
 
 			outputConnection, err := net.Dial("tcp", remoteService)
