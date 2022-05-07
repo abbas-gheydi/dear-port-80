@@ -29,7 +29,7 @@ It supports two kinds of upstream servers, the first one is a web server like ng
 
 ## How to Use It:
 
-[Download DearPort80](https://github.com/Abbas-gheydi/dear-port-80/releases) and configur it using command line arguments.
+[Download DearPort80](https://github.com/Abbas-gheydi/dear-port-80/releases) and configure it using command line arguments.
 ```bash
 ./dearport80 --help
 Usage of dearport80:
