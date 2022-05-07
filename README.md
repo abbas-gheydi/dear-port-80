@@ -3,7 +3,7 @@
 
 ## About The Project:
 
-“Dear Port80” is a zero-config TCP proxy server that hides “SSH server” behind a “HTTP server” !
+“Dear Port80” is a zero-config TCP proxy server that hides the SSH connection behind a HTTP server!
 
 ```
 
@@ -23,7 +23,7 @@
 
 
 ```
-It supports two kinds of upstream servers, the first one is a web server like nginx and the other one is a SSH server. It listens on port 8080 ( by default ) and it passes these two kinds of protocols on port 8080 at the same time!   
+It supports two kinds of upstream servers, the first one is a web server like nginx and the other one is a SSH server. It listens on port 8080 ( by default ) and it serves these two protocols on port 8080 at the same time!   
  It sends **all packets** to the HTTP backend server but if it detects that the request is from a SSH client then it proxies traffic to the SSH server.
 
 
