@@ -51,10 +51,13 @@ For example:
 ./dearport80 -listen="0.0.0.0:80" -http="10.10.10.1:80" -ssh="127.0.0.1:22"
 ```
 
-It listens to port 80 and proxies HTTP traffic to the “10.10.10.1:80” and SSH to the port 22 of the local host.
-   
+It listens on port 80 and proxies HTTP traffic to the “10.10.10.1:80” and SSH to port 22 of the localhost,for testing the behavior of proxy run following coomands:
+```bash
+
+curl 127.0.0.1:80 
+ssh 127.0.0.1 -p 80
       
-      
+```      
 To run it as a service you can use this guide:
 
 https://www.suse.com/support/kb/doc/?id=000019672
