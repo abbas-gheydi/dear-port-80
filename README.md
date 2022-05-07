@@ -3,7 +3,7 @@
 
 ## About The Project:
 
-“Dear Port80” is a zero-config TCP proxy server that hides “SSH server” behind the “HTTP server” !
+“Dear Port80” is a zero-config TCP proxy server that hides “SSH server” behind a “HTTP server” !
 
 ```
 
